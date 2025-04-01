@@ -19,7 +19,6 @@ export class OllamaService {
             stream: false,
         });
 
-        console.log(JSON.stringify(response.data))
         return response.data.response.trim();
     }
 }

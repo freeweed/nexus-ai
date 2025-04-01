@@ -32,7 +32,7 @@ export class TranscriptionService {
                 }
             }),
             total,
-            nextPage: lastPage !== page ? page + 1 : null,
+            nextPage: +lastPage !== +page ? +page + 1 : null,
             prevPage: page !== 1 ? page - 1 : null,
             lastPage,
             page

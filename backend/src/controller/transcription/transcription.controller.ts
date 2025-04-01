@@ -70,7 +70,6 @@ export class TranscriptionController {
         @UploadedFile() file: Express.Multer.File,
     ) {
         const text = await this.whisperService.transcribe(file.path)
-        this.logger.log("transcription text: " + text)
         const result = await this.service.create({
             filename: file.filename,
             filepath: file.path,

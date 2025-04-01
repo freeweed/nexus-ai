@@ -120,6 +120,10 @@ export class NoteService {
         if (data.title) note.title = data.title
         if (data.content) note.content = data.content
 
+        if(data.summary) {
+            data.summary = this.encryptService.encrypt(data.summary)
+        }
+
         const savedNote = await this.repository.save(note)
 
         if (data.transcriptionIds) {

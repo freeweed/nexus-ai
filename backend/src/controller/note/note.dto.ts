@@ -31,6 +31,10 @@ export class UpdateNoteDto{
     content?: Array<Record<string, any>>
 
     @IsOptional()
+    @IsString()
+    summary: string
+    
+    @IsOptional()
     @IsArray()
     @Type(() => Number)
     @IsInt({ each: true })
