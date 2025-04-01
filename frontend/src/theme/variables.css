@@ -1,0 +1,42 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+ion-menu{
+  --side-max-width: 280px;
+  --max-width: 280px
+}
+.table{
+    padding: 0px;
+  }
+  
+  .table .header{
+    height: 55px;
+    background-color: #f6f6f6;
+  }
+  
+  .table ion-row{
+    align-items: center;
+  }
+  
+  .table ion-row:not(:last-child), .table-left ion-row:not(:last-child){
+    border-bottom: 1px solid var(--ion-color-light-shade);
+  }
+  
+  .table ion-col{
+    text-align: center;
+    min-height: 55px;
+    max-height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .table ion-col.long-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+  
+  .table ion-row:hover:not(:last-child){
+    background-color: #f6f6f6;
+    cursor: pointer;
+  }
