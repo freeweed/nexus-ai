@@ -1,6 +1,9 @@
 # nexus-ai
 This is example code for implementing service with AI model llama and whisper
 
+## Architecture
+![Untitled Diagram (1)](https://github.com/user-attachments/assets/e5b9ed5e-d7e6-41ec-b0c9-1f1b3e2f4cea)
+
 ## Necessary environment
 - Docker 
 - Nodejs
@@ -25,3 +28,13 @@ OLLAMA_API_PATH=http://ollama:11434/api
 GENERATIVE_MODEL=llama3
 BASE_URL=http://localhost:3000
 ```
+
+## Potential improvements
+1. Add authentication
+2. Using better model for transcription
+3. Enchant prompt and result handling
+
+## Document
+https://documenter.getpostman.com/view/18215304/2sB2cRDjyX/
+
+
